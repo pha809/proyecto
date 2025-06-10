@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institución CBT Isaac Newton, estancia de crecimiento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #c8f7c5; /* verde claro de fondo */
+      color: #333;
+    }
+    h1 {
+      color: green;
+      font-family: 'Montserrat', sans-serif;
+    }
+    h2 {
+      color: blue;
+      margin-top: 30px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    p {
+      margin-bottom: 15px;
+      color: purple;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+    img {
+      display: block;
+      margin: 20px 0;
+      max-width: 100%;
+      height: auto;
+    }
+    #contador {
+      margin-top: 40px;
+      font-size: 1.2em;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Institución CBT Isaac Newton, estancia de crecimiento</h1>
+  <img src="logotipo.jpg" alt="Logotipo del CBT Isaac Newton">
+
+  <p>El CBT Isaac Newton se encuentra ubicado en Melchor Ocampo, Estado de México. 
+    <a href="https://www.facebook.com/share/r/1BoTPsD6Ek/" target="_blank">Ver en Facebook</a>
+  </p>
+
+  <p>El CBT Isaac Newton Melchor Ocampo ha destacado por su enfoque en la formación de líderes que construyen vidas, promoviendo el desarrollo personal y la contribución a la sociedad. Una publicación de Facebook destaca la historia de un egresado del CBT No. 2, quien ha sido inspiración para la comunidad por su historia de resiliencia y ejemplo de perseverancia. El CBT también ha participado en eventos internacionales, como el Congreso Internacional AENIT, compartiendo mensajes de resiliencia y motivando a los estudiantes a superar los desafíos.
+    <a href="https://www.facebook.com/share/r/19hZJDjW7r/" target="_blank">Ver publicación</a>
+  </p>
+
+  <img src="imagen-exteriores-1.jpg" alt="Imagen de exteriores 1">
+  <img src="imagen-exteriores-2.jpg" alt="Imagen de exteriores 2">
+
+  <h2>Carreras que se imparten</h2>
+  <p>En el CBT se imparten distintas carreras que los alumnos deben terminar además de cursar, a su vez, la formación de una preparatoria.</p>
+
+  <p><strong>Informática:</strong> se estudian las ciencias de la tecnología, enseñándole a los alumnos programación y habilidades informáticas de nivel técnico.</p>
+
+  <p><strong>Diseño asistido por computadora:</strong> En esta carrera se imparten los conocimientos necesarios para que los alumnos sean capaces de desarrollar páginas web y/o trabajar en el diseño de logos, explorando su creatividad al máximo.</p>
+
+  <p><strong>Mantenimiento Industrial:</strong> Se enseña las habilidades básicas para que el alumno pueda hacer mantenimiento a electrónicos y demás objetos de nivel técnico.</p>
+
+  <p><strong>Mecatrónica:</strong> se les enseña a los alumnos las habilidades necesarias para crear versiones básicas de mecanismos complejos para la creación de electrónicos.</p>
+
+  <img src="foto-del-personal.jpg" alt="Foto del personal">
+
+  <h2>Página creada por:</h2>
+  <p>Araceli Angelina García Hernández</p>
+  <p>Gracias por leer</p>
+
+  <div id="contador">Visitas a esta página: <span id="visitas">0</span></div>
+
+  <script>
+    // Usar localStorage para contar visitas locales
+    if (localStorage.visitasCBT) {
+      localStorage.visitasCBT = Number(localStorage.visitasCBT) + 1;
+    } else {
+      localStorage.visitasCBT = 1;
+    }
+    document.getElementById("visitas").textContent = localStorage.visitasCBT;
+  </script>
+</body>
+</html>
